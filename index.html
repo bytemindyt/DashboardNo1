@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap"
+      rel="stylesheet"
+    />
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="menu">
+        <div class="brand">
+          <img src="./assets/cloud-logo.png" alt="logo" />
+        </div>
+        <nav class="menu-list">
+          <ul>
+            <li>
+              <a href="/" class="active">
+                <img class="menu-icon" src="./assets/home.svg" alt="home" />
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img class="menu-icon" src="./assets/folder.svg" alt="folder" />
+                <span>My Files</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img class="menu-icon" src="./assets/clock.svg" alt="clock" />
+                <span> Recent Files</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img class="menu-icon" src="./assets/users.svg" alt="users" />
+                <span>Shared Files</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img
+                  class="menu-icon"
+                  src="./assets/alert-circle.svg"
+                  alt="alert"
+                />
+                <span>File Request</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img class="menu-icon" src="./assets/trash-2.svg" alt="trash" />
+                <span>Trash</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="project">
+          <div class="button-actions">
+            <ul>
+              <li>
+                <img src="assets/upload.svg" alt="Upload files" />
+                Upload Files
+              </li>
+              <li>
+                <img src="assets/folder.svg" alt="Upload folder" />
+                Upload Folder
+              </li>
+              <li>
+                <img src="assets/folder-plus.svg" alt="New folder" />
+                New Folder
+              </li>
+              <li>
+                <img src="assets/more-horizontal.svg" alt="More" />
+                More
+              </li>
+            </ul>
+          </div>
+
+          <button class="new-project-button">
+            Create New
+            <img
+              src="./assets/plus.svg"
+              alt="plus"
+              style="width:20px; height:20px;"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <div class="search-bar">
+          <img src="./assets/search.svg" alt="search" />
+          <input class="search-input" placeholder="Search" />
+        </div>
+        <div class="main-content">
+          <div class="section">
+            <div class="section-title">
+              <h2 class="title">Recently Used</h2>
+              <div class="section-actions">
+                <img src="./assets/search.svg" alt="search" />
+                <img src="./assets/list.svg" alt="list" />
+              </div>
+            </div>
+            <div class="section-body">
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    class="more-option"
+                    src="./assets/more-vertical.svg"
+                    alt="more"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/opened-folder.png"
+                  />
+                  <ul class="project-participants">
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-1.jpg"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-2.jpg"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <h2 class="card-title">App Project</h2>
+                <p class="card-description">Created: 20.02.2020</p>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    class="more-option"
+                    src="./assets/more-vertical.svg"
+                    alt="more"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/opened-folder.png"
+                  />
+                  <ul class="project-participants">
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-1.jpg"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-2.jpg"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <h2 class="card-title">Project: fitbit</h2>
+                <p class="card-description">Created: 28.02.2020</p>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img
+                    class="more-option"
+                    src="./assets/more-vertical.svg"
+                    alt="more"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/opened-folder.png"
+                  />
+                  <ul class="project-participants">
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-1.jpg"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-2.jpg"
+                      />
+                    </li>
+                    <li>
+                      <div class="more-participants">
+                        <span>+3</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <h2 class="card-title">Clint Documents</h2>
+                <p class="card-description">Created: 04.03.2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-title">
+              <h2 class="title">Recent Files</h2>
+              <div class="section-actions">
+                <a href="/">View all</a>
+              </div>
+            </div>
+            <div class="section-body">
+              <div class="table ">
+                <div
+                  style="order:1;"
+                  class="table-cell table-header table-cell-name"
+                >
+                  Name
+                </div>
+                <div
+                  style="order:2;"
+                  class="table-cell table-cell-bordered-left table-cell-name"
+                >
+                  <div class="marker marker-travel">Ps</div>
+                  Travel Landing Page
+                </div>
+                <div
+                  style="order:3;"
+                  class="table-cell table-cell-bordered-left table-cell-name"
+                >
+                  <div class="marker marker-ture">Ps</div>
+                  Ture Photos
+                </div>
+                <div
+                  style="order:4;"
+                  class="table-cell table-cell-bordered-left table-cell-name"
+                >
+                  <div class="marker marker-dashboard">PDF</div>
+                  Dashboards Structure
+                </div>
+                <div
+                  style="order:5;"
+                  class="table-cell table-cell-bordered-left table-cell-name"
+                >
+                  <div class="marker marker-character">ZIP</div>
+                  Character Illustration
+                </div>
+
+                <div
+                  style="order:1;"
+                  class="table-cell table-header table-cell-owner"
+                >
+                  Owners
+                </div>
+                <div
+                  style="order:2;"
+                  class="table-cell table-cell-less table-cell-owner"
+                >
+                  5 members
+                </div>
+                <div
+                  style="order:3;"
+                  class="table-cell table-cell-less table-cell-owner"
+                >
+                  12 members
+                </div>
+                <div
+                  style="order:4;"
+                  class="table-cell table-cell-less table-cell-owner"
+                >
+                  10 members
+                </div>
+                <div
+                  style="order:5;"
+                  class="table-cell table-cell-less table-cell-owner"
+                >
+                  3 members
+                </div>
+
+                <div
+                  style="order:1;"
+                  class="table-cell table-header table-cell-modification"
+                >
+                  Last Modified
+                </div>
+                <div
+                  style="order:2;"
+                  class="table-cell table-cell-less table-cell-modification"
+                >
+                  Mar 8, 2020
+                </div>
+                <div
+                  style="order:3;"
+                  class="table-cell table-cell-less table-cell-modification"
+                >
+                  Mar 8, 2020
+                </div>
+                <div
+                  style="order:4;"
+                  class="table-cell table-cell-less table-cell-modification"
+                >
+                  Mar 8, 2020
+                </div>
+                <div
+                  style="order:5;"
+                  class="table-cell table-cell-less table-cell-modification"
+                >
+                  Mar 8, 2020
+                </div>
+
+                <div
+                  style="order:1;"
+                  class="table-cell table-header table-cell-more"
+                ></div>
+                <div
+                  style="order:2;"
+                  class="table-cell  table-cell-bordered-right table-cell-more"
+                >
+                  <img src="./assets/more-horizontal.svg" />
+                </div>
+                <div
+                  style="order:3;"
+                  class="table-cell  table-cell-bordered-right table-cell-more"
+                >
+                  <img src="./assets/more-horizontal.svg" />
+                </div>
+                <div
+                  style="order:4;"
+                  class="table-cell  table-cell-bordered-right table-cell-more"
+                >
+                  <img src="./assets/more-horizontal.svg" />
+                </div>
+                <div
+                  style="order:5;"
+                  class="table-cell  table-cell-bordered-right table-cell-more"
+                >
+                  <img src="./assets/more-horizontal.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-title">
+              <h2 class="title">Shared with me</h2>
+              <div class="section-actions">
+                <a href="/">View all</a>
+              </div>
+            </div>
+            <div class="section-body">
+              <div class="card-small">
+                <div class="card-header-small">
+                  <img
+                    height="30"
+                    width="30"
+                    src="https://cdn1.iconfinder.com/data/icons/multimedia-and-interface-flat-style-1/32/Multimedia_Folder_data_file_ui_storage_document_multimedia-512.png"
+                  />
+                  <ul class="project-participants">
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-1.jpg"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-2.jpg"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <h2 class="card-title">Landing Page</h2>
+                <p class="card-description">12 Files</p>
+              </div>
+              <div class="card-small">
+                <div class="card-header-small">
+                  <img
+                    height="30"
+                    width="30"
+                    src="https://cdn1.iconfinder.com/data/icons/multimedia-and-interface-flat-style-1/32/Multimedia_Folder_data_file_ui_storage_document_multimedia-512.png"
+                  />
+                  <ul class="project-participants">
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-1.jpg"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-2.jpg"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <h2 class="card-title">Illustration Pack</h2>
+                <p class="card-description">24 Files</p>
+              </div>
+              <div class="card-small">
+                <div class="card-header-small">
+                  <img
+                    height="30"
+                    width="30"
+                    src="https://cdn1.iconfinder.com/data/icons/multimedia-and-interface-flat-style-1/32/Multimedia_Folder_data_file_ui_storage_document_multimedia-512.png"
+                  />
+                  <ul class="project-participants">
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-1.jpg"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="project-participant"
+                        src="./assets/face-2.jpg"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <h2 class="card-title">CV Design</h2>
+                <p class="card-description">6 Files</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profile-header">
+          <div class="profile-header-actions">
+            <img src="./assets/bell.svg" />
+            <img src="./assets/settings.svg" style="margin-left: 15px;" />
+          </div>
+          <div class="profile-header-info">
+            <span class="profile-header-text">Imran</span>
+            <img
+              src="./assets/chevron-down.svg"
+              width="16"
+              height="16"
+              style="margin-right: 10px;"
+            />
+            <img src="./assets/face-2.jpg" class="profile-header-info-photo" />
+          </div>
+        </div>
+        <div class="profile-content">
+          <h2 class="profile-title">Storage</h2>
+          <div class="usage-graph">
+            <svg class="arc" viewBox="0 0 190 190">
+              <circle
+                class="arc-documents"
+                cx="95"
+                cy="95"
+                r="91"
+                fill="transparent"
+              />
+              <circle
+                class="arc-videos"
+                cx="95"
+                cy="95"
+                r="91"
+                fill="transparent"
+              />
+              <circle
+                class="arc-images"
+                cx="95"
+                cy="95"
+                r="91"
+                fill="transparent"
+              />
+              <circle
+                class="arc-others"
+                cx="95"
+                cy="95"
+                r="91"
+                fill="transparent"
+              />
+            </svg>
+            <div class="storage-usage">
+              <h1 class="storage-usage-quantity">85</h1>
+              <h2 class="storage-usage-title">Used</h2>
+            </div>
+          </div>
+          <span class="storage-usage-subtitle">420.2 GB of 500 GB used</span>
+          <div class="usage-list">
+            <div class="usage-list-item">
+              <div class="usage-list-wrapper">
+                <div class="document-image">
+                  <img src="./assets/plus.svg" width="18" height="18" />
+                </div>
+                <div class="usage-list-description">
+                  <h3>Document</h3>
+                  <p>72 files</p>
+                </div>
+              </div>
+              <div class="usage-in-list">
+                <span>200 GB</span>
+              </div>
+            </div>
+            <div class="usage-list-item">
+              <div class="usage-list-wrapper">
+                <div class="video-image">
+                  <img src="./assets/plus.svg" width="18" height="18" />
+                </div>
+                <div class="usage-list-description">
+                  <h3>Videos</h3>
+                  <p>124 files</p>
+                </div>
+              </div>
+              <div class="usage-in-list">
+                <span>125 GB</span>
+              </div>
+            </div>
+            <div class="usage-list-item">
+              <div class="usage-list-wrapper">
+                <div class="image-image">
+                  <img src="./assets/plus.svg" width="18" height="18" />
+                </div>
+                <div class="usage-list-description">
+                  <h3>Images</h3>
+                  <p>1200 files</p>
+                </div>
+              </div>
+              <div class="usage-in-list">
+                <span>75 GB</span>
+              </div>
+            </div>
+            <div class="usage-list-item">
+              <div class="usage-list-wrapper">
+                <div class="other-image">
+                  <img src="./assets/plus.svg" width="18" height="18" />
+                </div>
+                <div class="usage-list-description">
+                  <h3>Others</h3>
+                  <p>30 files</p>
+                </div>
+              </div>
+              <div class="usage-in-list">
+                <span>50 GB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
